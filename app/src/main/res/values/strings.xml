@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">layoutingExample</string>
+    <string name="hello_rian">hello, Rian!</string>
+    <string name="what_you_gonna_eat_today">what you gonna eat today?</string>
+</resources>

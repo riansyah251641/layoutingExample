@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textViewHello"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:text="@string/hello_rian"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewPerson"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewEatToday"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/what_you_gonna_eat_today"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewHello"
+        app:layout_constraintStart_toStartOf="@+id/textViewHello"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHello" />
+
+    <ImageView
+        android:id="@+id/imageViewPerson"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/person"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewHello"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewMenu"
+        app:layout_constraintStart_toEndOf="@+id/textViewHello"
+        app:layout_constraintTop_toTopOf="@+id/textViewHello" />
+
+    <ImageView
+        android:id="@+id/imageViewMenu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_menu"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewHello"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewHello" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
